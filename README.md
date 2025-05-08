@@ -11,10 +11,6 @@ A React application that displays chess grandmasters from the Chess.com API with
 - Loading states and error handling for a robust user experience
 - Comprehensive test suite with Jest and React Testing Library
 
-## Live Demo
-
-[Live Demo Link - if deployed]
-
 ## Screenshots
 
 ![Screenshot of Chess Grandmasters List](screenshots/players-list.png)
@@ -22,8 +18,9 @@ A React application that displays chess grandmasters from the Chess.com API with
 
 ## Technologies Used
 
-- React 18 with TypeScript
+- React 19 with TypeScript
 - React Router for navigation
+- Vite for bundling
 - Custom infinite scroll implementation
 - Jest and React Testing Library for tests
 - CSS for styling (no external UI libraries)
