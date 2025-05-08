@@ -1,0 +1,38 @@
+{
+  "name": "amenitiz-fe-tech-challenge",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev --port 3000",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server",
+    "preview": "cross-env NODE_ENV=production node server"
+  },
+  "dependencies": {
+    "@react-router/node": "^7.5.3",
+    "compression": "^1.8.0",
+    "express": "^5.0.1",
+    "isbot": "^5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.5.3",
+    "sirv": "^3.0.1"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.5.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react-swc": "^3.8.0",
+    "cross-env": "^7.0.3",
+    "typescript": "~5.7.3",
+    "vite": "^6.1.1"
+  },
+  "description": "Amenitiz Front End Techincal Challenge",
+  "main": "App.tsx",
+  "author": "Rodrigo Dalmas",
+  "license": "MIT"
+}
