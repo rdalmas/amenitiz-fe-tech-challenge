@@ -30,7 +30,7 @@ A React application that displays chess grandmasters from the Chess.com API with
 ### Prerequisites
 
 - Node.js (v14 or newer)
-- npm or yarn
+- yarn (npm install yarn -g)
 
 ### Installation
 
@@ -60,13 +60,14 @@ yarn run test
 ```
 
 ### Project Structure
-
+```
 src/
 ├── api/          # API service and utilities
 ├── components/   # Reusable components
 ├── pages/        # Page components
 ├── model/        # TS Interfaces
 ├── utils/        # General Utilities
+```
 
 ### Implementation Decisions & Compromises
 
@@ -105,55 +106,55 @@ During development, I made several implementation decisions to balance performan
 To make this application production-ready, the following enhancements would be necessary:
 
 #### Performance Improvements
-<input disabled="" type="checkbox"> Implement proper API pagination to load only necessary data
-<input disabled="" type="checkbox"> Add caching layer for API responses (using React Query, SWR, or custom cache)
-<input disabled="" type="checkbox"> Code splitting with React.lazy() for route-based component loading
-<input disabled="" type="checkbox"> Optimize bundle size with tree shaking and dependency optimization
-<input disabled="" type="checkbox"> Implement service workers for offline capabilities and caching
-<input disabled="" type="checkbox"> Add proper memory management for the infinite scroll (virtualization)
+- [ ] Implement proper API pagination to load only necessary data
+- [ ] Add caching layer for API responses (using React Query, SWR, or custom cache)
+- [ ] Code splitting with React.lazy() for route-based component loading
+- [ ] Optimize bundle size with tree shaking and dependency optimization
+- [ ] Implement service workers for offline capabilities and caching
+- [ ] Add proper memory management for the infinite scroll (virtualization)
 
 #### UI/UX Enhancements
-<input disabled="" type="checkbox"> Add loading skeletons instead of simple loading text
-<input disabled="" type="checkbox"> Implement proper animations for page transitions and loading states
-<input disabled="" type="checkbox"> Enhanced error states with retry functionality
-<input disabled="" type="checkbox"> Advanced filtering and search capabilities for players
-<input disabled="" type="checkbox"> Improve responsive design for various device types and orientations
-<input disabled="" type="checkbox"> Add dark mode support
+- [ ] Add loading skeletons instead of simple loading text
+- [ ] Implement proper animations for page transitions and loading states
+- [ ] Enhanced error states with retry functionality
+- [ ] Advanced filtering and search capabilities for players
+- [ ] Improve responsive design for various device types and orientations
+- [ ] Add dark mode support
 
 #### Architecture & Code Quality
-<input disabled="" type="checkbox"> Implement state management solution for larger application scale (Redux, Zustand, or Context)
-<input disabled="" type="checkbox"> Add stronger typing with more specific TypeScript interfaces
-<input disabled="" type="checkbox"> Extract business logic into custom hooks for better separation of concerns
-<input disabled="" type="checkbox"> Implement React Error Boundaries for graceful error recovery
-<input disabled="" type="checkbox"> Create a component library with Storybook for better documentation
+- [ ] Implement state management solution for larger application scale (Redux, Zustand, or Context)
+- [ ] Add stronger typing with more specific TypeScript interfaces
+- [ ] Extract business logic into custom hooks for better separation of concerns
+- [ ] Implement React Error Boundaries for graceful error recovery
+- [ ] Create a component library with Storybook for better documentation
 
 #### Testing & Quality Assurance
-<input disabled="" type="checkbox"> Increase test coverage with more edge cases
-<input disabled="" type="checkbox"> Add end-to-end tests with Cypress or Playwright
-<input disabled="" type="checkbox"> Implement visual regression testing
-<input disabled="" type="checkbox"> Add accessibility (a11y) testing
-<input disabled="" type="checkbox"> Performance testing and monitoring
+- [ ] Increase test coverage with more edge cases
+- [ ] Add end-to-end tests with Cypress or Playwright
+- [ ] Implement visual regression testing
+- [ ] Add accessibility (a11y) testing
+- [ ] Performance testing and monitoring
 
 #### Deployment & DevOps
-<input disabled="" type="checkbox"> Set up proper CI/CD pipeline
-<input disabled="" type="checkbox"> Configure environment-specific variables
-<input disabled="" type="checkbox"> Add monitoring and error tracking (e.g., Sentry)
-<input disabled="" type="checkbox"> Implement feature flags for controlled rollouts
-<input disabled="" type="checkbox"> Configure proper caching headers and CDN distribution
+- [ ] Set up proper CI/CD pipeline
+- [ ] Configure environment-specific variables
+- [ ] Add monitoring and error tracking (e.g., Sentry)
+- [ ] Implement feature flags for controlled rollouts
+- [ ] Configure proper caching headers and CDN distribution
 
 #### Security
-<input disabled="" type="checkbox"> Add rate limiting for API requests
-<input disabled="" type="checkbox"> Implement CORS properly if creating a backend proxy
-<input disabled="" type="checkbox"> Add security headers
-<input disabled="" type="checkbox"> Perform dependency vulnerability scanning
-<input disabled="" type="checkbox"> Add protection against common web vulnerabilities
+- [ ] Add rate limiting for API requests
+- [ ] Implement CORS properly if creating a backend proxy
+- [ ] Add security headers
+- [ ] Perform dependency vulnerability scanning
+- [ ] Add protection against common web vulnerabilities
 
 #### Accessibility
-<input disabled="" type="checkbox"> Ensure proper keyboard navigation
-<input disabled="" type="checkbox"> Add ARIA attributes where necessary
-<input disabled="" type="checkbox"> Ensure proper color contrast
-<input disabled="" type="checkbox"> Test with screen readers
-<input disabled="" type="checkbox"> Add focus management for modals and dynamic content
+- [ ] Ensure proper keyboard navigation
+- [ ] Add ARIA attributes where necessary
+- [ ] Ensure proper color contrast
+- [ ] Test with screen readers
+- [ ] Add focus management for modals and dynamic content
 
 
 ### Key Learnings & Challenges
