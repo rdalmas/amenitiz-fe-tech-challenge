@@ -46,4 +46,4 @@ export class ApiService implements ChessApiService {
 }
 
 // Create a singleton instance of the service
-export const chessApiService = new ApiService();
+export const api = new ApiService();
